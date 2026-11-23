@@ -1,9 +1,13 @@
-### Well hello there!
+# Pele de Pêssego · landing page do aluguer
 
-This repository is meant to provide an example for *forking* a repository on GitHub.
+Página única para o aluguer de máquinas laser com operadora, na Maia e até 50 km.
+Os textos e as regras vêm da secção 6A do documento central do projeto.
 
-Creating a *fork* is producing a personal copy of someone else's project. Forks act as a sort of bridge between the original repository and your personal copy. You can submit *Pull Requests* to help make other people's projects better by offering your changes up to the original project. Forking is at the core of social coding at GitHub.
+- `index.html`: página, dados estruturados (LocalBusiness, Service, FAQPage)
+- `styles.css`: cores da marca, Newsreader + Hanken Grotesk, layout pensado primeiro para telemóvel
+- `script.js`: simulador de preço (pacote + 3 € por km acima de 10 km, por deslocação; até 50 km)
 
-After forking this repository, you can make some changes to the project, and submit [a Pull Request](https://github.com/octocat/Spoon-Knife/pulls) as practice.
+Para ver: abrir `index.html` num browser. Não precisa de compilação.
 
-For some more information on how to fork a repository, [check out our guide, "Forking Projects""](http://guides.github.com/overviews/forking/). Thanks! :sparkling_heart:
+Por confirmar antes de publicar: IVA nos preços, tempo de resposta do apoio, horário,
+marcas, modelos e fotografias das máquinas, domínio e alojamento.

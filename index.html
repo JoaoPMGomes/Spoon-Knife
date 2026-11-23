@@ -1,20 +1,297 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="pt-PT" data-type="service">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Spoon-Knife</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aluguer de Laser na Maia com Operadora | Pele de Pêssego</title>
+  <meta name="description" content="Aluguer de laser de depilação na Maia e até 50 km, com operadora, formação, consumíveis e seguro incluídos. Desde 200 € por dia. Ligue 916 974 262.">
+  <meta name="page-type" content="service">
+  <meta name="site-kind" content="other">
+  <meta name="theme-color" content="#FBF6F1">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_PT">
+  <meta property="og:title" content="Aluguer de laser na Maia, com operadora incluída">
+  <meta property="og:description" content="Depilação a laser no seu espaço sem comprar equipamento. Desde 200 € por dia, até 50 km da Maia.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23B3261E'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' text-anchor='middle' fill='%23fff'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&family=Newsreader:opsz,wght@6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "#negocio",
+        "name": "Pele de Pêssego",
+        "description": "Aluguer de máquinas laser com operadora para profissionais e espaços de estética, venda de equipamentos e serviços de estética.",
+        "telephone": "+351916974262",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Avenida Dom Manuel II, 2070",
+          "postalCode": "4470-334",
+          "addressLocality": "Maia",
+          "addressCountry": "PT"
+        },
+        "areaServed": { "@type": "GeoCircle", "geoMidpoint": { "@type": "Place", "name": "Maia" }, "geoRadius": "50000" },
+        "sameAs": ["https://www.instagram.com/peledepessego.estetica/", "https://www.facebook.com/peledepessego.estetica"]
+      },
+      {
+        "@type": "Service",
+        "name": "Aluguer de laser com operadora",
+        "provider": { "@id": "#negocio" },
+        "areaServed": "Maia e até 50 km",
+        "offers": [
+          { "@type": "Offer", "name": "Depilação a laser, 1 dia", "price": "200", "priceCurrency": "EUR" },
+          { "@type": "Offer", "name": "Depilação a laser, 2 dias", "price": "300", "priceCurrency": "EUR" },
+          { "@type": "Offer", "name": "Depilação a laser, 1 semana", "price": "450", "priceCurrency": "EUR" },
+          { "@type": "Offer", "name": "Tratamentos de corpo, 1 mês", "price": "500", "priceCurrency": "EUR" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "Até onde vão?", "acceptedAnswer": { "@type": "Answer", "text": "Até 50 km do centro da Maia. Os primeiros 10 km estão incluídos; depois, 3 € por km, contados pela distância por estrada (só ida), em cada deslocação." } },
+          { "@type": "Question", "name": "Preciso de saber usar a máquina?", "acceptedAnswer": { "@type": "Answer", "text": "Não. A operadora está incluída e damos formação." } },
+          { "@type": "Question", "name": "E se a máquina avariar?", "acceptedAnswer": { "@type": "Answer", "text": "Substituímo-la. A manutenção está incluída." } },
+          { "@type": "Question", "name": "Os consumíveis são à parte?", "acceptedAnswer": { "@type": "Answer", "text": "Não, estão incluídos, tal como o seguro." } },
+          { "@type": "Question", "name": "Posso alugar por mais tempo?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Ligue-nos para períodos mais longos do que uma semana." } }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-
 <body>
+<!--
+  Pele de Pêssego · landing page do aluguer (ação 4, secção 6A do documento central)
+  Tipo: serviço (B2B, profissionais de estética). Cores: as da marca (vermelho do logótipo) sobre fundo cor de pêssego claro.
+  Tipografia: Newsreader 400 (títulos) + Hanken Grotesk 400/500 (texto).
+  Fotografias: nenhuma ainda. Espaços marcados com data-slot="foto-..." para as fotografias da Fátima.
+-->
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
 
-<img src="forkit.gif" id="octocat" alt="" />
+<header class="nav">
+  <div class="wrap nav__row">
+    <a class="mark" href="#topo" aria-label="Pele de Pêssego, início">Pele de Pêssego</a>
+    <nav class="nav__links" aria-label="Secções">
+      <a href="#incluido">O que inclui</a>
+      <a href="#precos">Preços</a>
+      <a href="#simulador">Simulador</a>
+      <a href="#perguntas">Perguntas</a>
+    </nav>
+    <a class="btn btn--primary btn--sm" href="tel:+351916974262">Ligar 916 974 262</a>
+  </div>
+</header>
 
-<!-- Feel free to change this text here -->
-<p>
-  Fork me? Fork you, @octocat!
-</p>
+<main id="conteudo">
 
+  <section class="hero" id="topo">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <p class="eyebrow" data-enter>Para profissionais e espaços de estética</p>
+        <h1 data-enter>Aluguer de laser na Maia, com operadora incluída</h1>
+        <p class="lead" data-enter>Leve a depilação a laser para o seu espaço sem comprar equipamento. Entregamos, formamos, operamos e recolhemos, num raio de 50 km da Maia.</p>
+        <div class="actions" data-enter>
+          <a class="btn btn--primary" href="tel:+351916974262">Ligar 916 974 262</a>
+          <a class="btn btn--ghost" href="https://wa.me/351916974262" rel="noopener">Falar por WhatsApp</a>
+        </div>
+      </div>
+      <dl class="facts" data-enter>
+        <div><dt>Desde</dt><dd>200 € por dia</dd></div>
+        <div><dt>Incluído</dt><dd>Operadora e formação</dd></div>
+        <div><dt>Deslocação</dt><dd>10 km incluídos</dd></div>
+        <div><dt>Avaria</dt><dd>Máquina substituída</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section band" id="incluido">
+    <div class="wrap">
+      <h2>Tudo o que precisa num só preço</h2>
+      <p class="intro">Outros alugam a máquina. Nós levamos o serviço completo, do primeiro dia à recolha.</p>
+      <ul class="included">
+        <li><span class="included__n">01</span>Operadora especializada</li>
+        <li><span class="included__n">02</span>Formação</li>
+        <li><span class="included__n">03</span>Consumíveis</li>
+        <li><span class="included__n">04</span>Seguro</li>
+        <li><span class="included__n">05</span>Entrega e recolha</li>
+        <li><span class="included__n">06</span>Manutenção</li>
+        <li><span class="included__n">07</span>Presença no primeiro dia</li>
+        <li><span class="included__n">08</span>Apoio técnico</li>
+        <li><span class="included__n">09</span>Substituição da máquina em caso de avaria</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="precos">
+    <div class="wrap">
+      <h2>Pacotes de aluguer</h2>
+      <p class="intro">Preço por pacote. Inclui 10 km de deslocação; acima disso, 3 € por km, contados pela distância por estrada (só ida) desde a Maia.</p>
+      <div class="plans">
+        <article class="plan">
+          <h3>Depilação a laser</h3>
+          <ul class="rows">
+            <li><span>1 dia</span><strong>200 €</strong></li>
+            <li><span>2 dias</span><strong>300 €</strong></li>
+            <li><span>1 semana</span><strong>450 €</strong></li>
+          </ul>
+        </article>
+        <article class="plan">
+          <h3>Tratamentos de corpo</h3>
+          <ul class="rows">
+            <li><span>1 mês</span><strong>500 €</strong></li>
+          </ul>
+          <p class="plan__note">A deslocação é cobrada em cada visita durante o mês.</p>
+        </article>
+      </div>
+      <a class="link" href="#simulador">Calcular o preço para a minha morada</a>
+    </div>
+  </section>
+
+  <section class="section surface" id="simulador">
+    <div class="wrap split">
+      <div>
+        <h2>Preço com deslocação</h2>
+        <p class="intro">Escolha o pacote e a distância por estrada até ao seu espaço. O total aparece logo.</p>
+        <form class="calc" id="calc" novalidate>
+          <div class="field">
+            <label for="pacote">Pacote</label>
+            <select id="pacote" name="pacote">
+              <option value="">Escolha um pacote</option>
+              <option value="200" data-mensal="0">Depilação a laser, 1 dia · 200 €</option>
+              <option value="300" data-mensal="0">Depilação a laser, 2 dias · 300 €</option>
+              <option value="450" data-mensal="0">Depilação a laser, 1 semana · 450 €</option>
+              <option value="500" data-mensal="1">Tratamentos de corpo, 1 mês · 500 €</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="km">Distância desde a Maia (km, só ida)</label>
+            <input id="km" name="km" type="text" inputmode="decimal" autocomplete="off" aria-describedby="km-erro km-ajuda">
+            <p class="help" id="km-ajuda">Pela estrada, da Avenida Dom Manuel II até ao seu espaço.</p>
+            <p class="error" id="km-erro" hidden></p>
+          </div>
+          <div class="field" id="campo-visitas" hidden>
+            <label for="visitas">Deslocações no mês</label>
+            <input id="visitas" name="visitas" type="text" inputmode="numeric" value="1" autocomplete="off" aria-describedby="visitas-erro">
+            <p class="error" id="visitas-erro" hidden></p>
+          </div>
+        </form>
+        <div class="result" id="resultado" aria-live="polite">
+          <p class="result__empty">Escolha um pacote para ver o total.</p>
+        </div>
+      </div>
+      <figure class="zone" aria-label="Zona de aluguer: deslocação incluída até 10 km e serviço até 50 km do centro da Maia">
+        <svg viewBox="0 0 400 400" role="img" aria-hidden="true">
+          <circle cx="200" cy="200" r="180" class="zone__outer"/>
+          <circle cx="200" cy="200" r="36" class="zone__inner"/>
+          <circle cx="200" cy="200" r="5" class="zone__dot"/>
+          <line x1="200" y1="200" x2="380" y2="200" class="zone__radius"/>
+          <text x="200" y="152" class="zone__label" text-anchor="middle">Maia</text>
+          <text x="290" y="222" class="zone__label" text-anchor="middle">50 km</text>
+          <text x="200" y="258" class="zone__small" text-anchor="middle">10 km incluídos</text>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="equipamentos">
+    <div class="wrap">
+      <h2>Equipamentos disponíveis</h2>
+      <p class="intro">Tecnologia para depilação a laser e tratamentos de corpo. Diga-nos o que quer fazer e indicamos a máquina.</p>
+      <ul class="tech">
+        <li>Laser díodo</li>
+        <li>Laser Tri-Wave, modo SHR</li>
+        <li>IPL</li>
+        <li>Laser vascular</li>
+        <li>Laser podológico</li>
+        <li>Cavitação</li>
+        <li>Radiofrequência</li>
+        <li>Criolipólise</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section surface" id="como-funciona">
+    <div class="wrap">
+      <h2>Como funciona o aluguer</h2>
+      <ol class="steps">
+        <li><h3>Ligue-nos</h3><p>Diga o tratamento, as datas e a morada do seu espaço.</p></li>
+        <li><h3>Confirmamos o pacote</h3><p>Damos o preço final, já com a deslocação.</p></li>
+        <li><h3>Entregamos e formamos</h3><p>Ficamos consigo no primeiro dia.</p></li>
+        <li><h3>Recolhemos no fim</h3><p>Sem custos extra de recolha.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="compra">
+    <div class="wrap split split--text">
+      <div>
+        <h2>Compra de equipamento</h2>
+        <p class="intro">Prefere ter a sua própria máquina? Também vendemos. Paga 50% no início e o restante em até 18 meses.</p>
+      </div>
+      <div class="buy">
+        <p class="buy__figure">50%<span> no início</span></p>
+        <p class="buy__figure">18<span> meses para o restante</span></p>
+        <a class="btn btn--ghost" href="https://wa.me/351916974262?text=Ol%C3%A1%2C%20gostava%20de%20saber%20as%20condi%C3%A7%C3%B5es%20de%20compra%20de%20equipamento." rel="noopener">Pedir condições de compra</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section surface" id="perguntas">
+    <div class="wrap split split--text">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq">
+        <details><summary>Até onde vão?</summary><p>Até 50 km do centro da Maia. Os primeiros 10 km estão incluídos; depois, 3 € por km, contados pela distância por estrada (só ida), em cada deslocação.</p></details>
+        <details><summary>Preciso de saber usar a máquina?</summary><p>Não. A operadora está incluída e damos formação.</p></details>
+        <details><summary>E se a máquina avariar?</summary><p>Substituímo-la. A manutenção está incluída.</p></details>
+        <details><summary>Os consumíveis são à parte?</summary><p>Não, estão incluídos, tal como o seguro.</p></details>
+        <details><summary>Posso alugar por mais tempo?</summary><p>Sim. Ligue-nos para períodos mais longos do que uma semana.</p></details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="closing" id="contacto">
+  <div class="wrap">
+    <div class="close">
+      <h2>Reservas por telefone</h2>
+      <p class="intro">Fale com a Fátima Sousa, responsável comercial. Respondemos também por WhatsApp.</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="tel:+351916974262">Ligar 916 974 262</a>
+        <a class="btn btn--ghost btn--on-dark" href="https://wa.me/351916974262" rel="noopener">Falar por WhatsApp</a>
+      </div>
+    </div>
+    <div class="foot">
+      <div>
+        <p class="foot__label">Morada</p>
+        <a class="link link--on-dark" href="https://www.openstreetmap.org/search?query=Avenida%20Dom%20Manuel%20II%202070%20Maia" rel="noopener">Avenida Dom Manuel II, 2070<br>4470-334 Maia</a>
+      </div>
+      <div>
+        <p class="foot__label">Atendimento</p>
+        <p>Por marcação</p>
+      </div>
+      <div>
+        <p class="foot__label">Também fazemos</p>
+        <p>Serviços de estética e depilação a laser em centros parceiros, de Braga a Oliveira do Bairro.</p>
+      </div>
+      <div>
+        <p class="foot__label">Redes</p>
+        <p><a class="link link--on-dark" href="https://www.instagram.com/peledepessego.estetica/" rel="noopener">Instagram</a> · <a class="link link--on-dark" href="https://www.facebook.com/peledepessego.estetica" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <p class="legal">© <span id="ano">2026</span> Pele de Pêssego · Maia</p>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Contacto rápido">
+  <a class="btn btn--primary" href="tel:+351916974262">Ligar</a>
+  <a class="btn btn--ghost" href="https://wa.me/351916974262" rel="noopener">WhatsApp</a>
+</nav>
+
+<script src="script.js" defer></script>
 </body>
 </html>
