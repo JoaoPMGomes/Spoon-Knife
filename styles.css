@@ -46,6 +46,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 img, svg { display: block; max-width: 100%; }
+img { height: auto; }
 ul, ol { list-style: none; }
 a { color: inherit; }
 
@@ -85,10 +86,9 @@ h3 { font: 500 var(--t-h3)/1.35 var(--f-text); }
 }
 .nav__row { height: 100%; display: flex; align-items: center; gap: 32px; }
 .mark {
-  font: 400 1.5rem/1 var(--f-display); letter-spacing: -0.02em;
-  text-decoration: none; color: var(--accent); margin-right: auto;
-  min-height: 44px; display: inline-flex; align-items: center;
+  margin-right: auto; min-height: 44px; display: inline-flex; align-items: center;
 }
+.mark img { height: 44px; width: auto; border-radius: 6px; }
 .nav__links { display: none; gap: 28px; }
 .nav__links a {
   text-decoration: none; font-weight: 500; font-size: .9375rem;
@@ -151,6 +151,17 @@ h3 { font: 500 var(--t-h3)/1.35 var(--f-text); }
 .facts dt { font-size: .875rem; color: var(--muted); }
 .facts dd { font: 400 clamp(1.25rem, 1rem + .8vw, 1.75rem)/1.2 var(--f-display); margin-top: 6px; }
 @media (min-width: 1024px) { .facts { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.hero__photo img {
+  width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center 60%;
+  border-radius: var(--radius);
+}
+@media (min-width: 1024px) {
+  .hero__grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; row-gap: 56px; align-content: space-between; }
+  .hero__text { grid-column: 1 / span 6; align-self: center; }
+  .hero__photo { grid-column: 7 / span 6; align-self: center; }
+  .hero__photo img { aspect-ratio: 1080 / 700; }
+  .facts { grid-column: 1 / -1; }
+}
 @media (max-width: 639px) {
   .facts div:nth-child(2), .facts div:nth-child(4) { display: none; }
   .hero__grid { gap: 32px; }
@@ -228,6 +239,14 @@ h3 { font: 500 var(--t-h3)/1.35 var(--f-text); }
 .zone__small { font: 500 13px var(--f-text); fill: var(--muted); }
 
 /* Equipamentos */
+.equip { display: grid; gap: 40px; }
+.equip__photo { max-width: 360px; }
+.equip__photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 40%; border-radius: var(--radius); }
+@media (min-width: 1024px) {
+  .equip { grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 24px; align-items: end; }
+  .equip > :first-child { grid-column: 1 / span 7; }
+  .equip__photo { grid-column: 9 / span 4; justify-self: end; }
+}
 .tech {
   display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 56px;
 }
@@ -310,6 +329,7 @@ h3 { font: 500 var(--t-h3)/1.35 var(--f-text); }
   .js.is-ready [data-enter]:nth-child(2) { transition-delay: 60ms; }
   .js.is-ready [data-enter]:nth-child(3) { transition-delay: 120ms; }
   .js.is-ready [data-enter]:nth-child(4) { transition-delay: 180ms; }
+  .js.is-ready .hero__photo[data-enter] { transition-delay: 180ms; }
   .js.is-ready .facts[data-enter] { transition-delay: 260ms; }
 }
 @media (prefers-reduced-motion: reduce) {
